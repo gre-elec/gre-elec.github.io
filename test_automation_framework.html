@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" class="text-gray-900 leading-tight">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.typekit.net/zom8phy.css">
+    <link href="assets/css/styles.css" rel="stylesheet"/>
+    <title>Aaron K Greenyer ⌘ Test Automation Framework</title>
+    <style type="text/css" media="print">
+    @page {
+      size:  auto;
+      margin: 8mm 0;
+    }
+    @page :first {
+      size:  auto;
+      margin: 0mm;
+    }
+    /* html {
+        background-color: #FFFFFF;
+        margin: 0px;
+    } */
+    body {
+        margin: 8mm 10mm 0mm 10mm;
+    }
+    /* #main {
+      border: 1px solid blue;
+    } */
+    .job-history {
+      page-break-inside: avoid;
+    }
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body class="min-h-screen bg-gray-100 print:min-h-0">
+<nav class="sticky py-4 xl:px-40 top-0 z-40 text-gray-90 lg:z-50 w-full max-w-8xl mx-auto bg-white flex-none flex">
+    <div class="name">
+        <a href="https://gre-elec.github.io//">
+            <h2 class="text-2xl"><img
+                    src="https://github.com/gre-elec/gre-elec.github.io/blob/main/img/gre-elec-logo.png?raw=true"
+                    class="inline-block rounded-full w-8 shadow-md"/> Greenyer Electronics</h2>
+        </a>
+    </div>
+</nav>
+<div id="main">
+
+
+    <div class="page flex flex-wrap justify-center mt-10">
+        <div class="flex w-full justify-center mb-3 pb-10">
+
+            <div class="prose">
+                <h1 id="test-automation-framework">Test Automation Framework</h1>
+                <div class="pt-4 pb-3 my-2 border-t-2 border-b-2 print:pt-2 print:pb-2 print:my-1">
+                    <h2 id="your-solution">Your Solution</h2>
+                    <p>Product parametric, acceptance, and performance testing based on a flexible, cost effective
+                        independent and future-orientated generic open-source automation framework.</p>
+                    <h2 id="objective">Objective</h2>
+                    <p>To provide a system to meet your current and future requirements to manage test sequences
+                        simplifying test workflow, data recording, product analysis and troubleshooting.</p>
+                    <h2 id="flow-overview">Flow Overview</h2>
+                    <p>
+                        <img src="https://github.com/gre-elec/gre-elec.github.io/blob/main/img/high_level_flowchart.PNG?raw=true"
+                             alt="high_level_flowchart"/></p>
+                    <h3 id="initiating-the-session">Initiating The Session</h3>
+                    <ul>
+                        <li><strong>Build Session:</strong> An application window is available for a user to select a
+                            set of tasks to
+                            perform. The session will load the selected configuration, build the session archive and
+                            load the performing module that will perform a specific task
+                        </li>
+                        <li><strong>Verify Session Data:</strong> A session could have a single set of parameters or a
+                            matrix of hundreds of permutations (there is no limit) so it is important to check the input
+                            data is valid. The data is sent to a validation function in the performing module and will
+                            notify the user of invalid entries
+                        </li>
+                        <li><strong>Verify Interfaces:</strong> Checks that all the hardware needed for performing the
+                            task is available and will notify the user of unavailable hardware
+                        </li>
+                    </ul>
+                    <h3 id="main-performing-loop">Main Performing Loop</h3>
+                    <p>The performing function will require a set of parameters for performing the task and these
+                        parameters will be set in a definition record. The creator of the definitions can also group
+                        definitions by certain criteria which can be placed into a definition batch file</p>
+                    <ul>
+                        <li><strong>Definition Batch:</strong> Current definition batch from the list of batches to be
+                            performed
+                        </li>
+                        <li><strong>Definition Record:</strong> Current record from the list in the current batch</li>
+                        <li><strong>Perform Function:</strong> Specific module that will be performing the task and
+                            return the results
+                        </li>
+                    </ul>
+                    <h3 id="session-wrap-up">Session Wrap Up</h3>
+                    <ul>
+                        <li><strong>Safe State Shutdown:</strong> To prevent any data loss and to make sure the device
+                            under test can be removed
+                        </li>
+                        <li><strong>Session Analysis:</strong> Will display a report of the session</li>
+                        <li><strong>Release Data:</strong> The user can choose to release the data for review by other
+                            members of the team
+                        </li>
+                    </ul>
+                    <h2 id="purpose">Purpose</h2>
+                    <p>Typically, test applications develop from basic essential functions growing over time to cover
+                        variants and multiple tasks along with further aspects for certification and reliability
+                        criteria. The applications are very useful; however without the use of a common structure the
+                        system will take up nearly all your time, and can be a source of frustration to continuous
+                        modify, maintain and document.</p>
+                    <p>The ideal solution to organising the test applications is a test management platform. Current
+                        applications are either costly and require a licence for each system, and comparable open source
+                        software is tailored for web or program testing.</p>
+                    <p>This is where the test automation framework comes into play. I can offer a test management
+                        platform that is simple to use and easy to develop with.</p>
+                    <h2 id="usage">Usage</h2>
+                    <h3 id="session-queue">Session Queue</h3>
+                    <p>When the user starts the application they are presented with a queue window.</p>
+                    <p>
+                        <img src="https://github.com/gre-elec/gre-elec.github.io/blob/main/img/test_queue_viewer.PNG?raw=true"
+                             alt="test_queue_viewer"/></p>
+                    <p>This application is able to queue multiple sessions and shows the user the details of the
+                        selected tests they wish to run.</p>
+                    <p>
+                        <img src="https://github.com/gre-elec/gre-elec.github.io/blob/main/img/test_queue.PNG?raw=true"
+                             alt="test_queue_viewer"/></p>
+                    <p>Having a queue rather than a single selection allows the user to run the same test multiple times
+                        or build a series of smaller test sessions. The choice will be down to preference of how long
+                        the tests might take or how the users would like the tests reported.</p>
+                    <p>The <strong>setup files</strong> have been created by the test developer; the user selects a file
+                        and the details will be displayed. The user can modify the details and save it as a new setup
+                        file.</p>
+                    <h3 id="session-monitor">Session Monitor</h3>
+                    <p>Understanding where the session is at a glance is vitally important when it comes to more complex
+                        test
+                        systems. When failures are found, being able to quickly discover where the issue is occurring
+                        can
+                        save huge amounts of time in solving the issue.</p>
+                    <p>When the session is running the user will be able to view the progress and control the session
+                        with the monitor.</p>
+                    <p>
+                        <img src="https://github.com/gre-elec/gre-elec.github.io/blob/main/img/test_flow_monitor.PNG?raw=true"
+                             alt="test_flow_monitor"/></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>
